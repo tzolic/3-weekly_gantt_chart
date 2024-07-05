@@ -98,7 +98,6 @@ void drawGantt(struct task tasks[], int nb_tasks){
 		char content[4];
 
 		for(int k = 0; k < NB_COL; k++){
-
 			//if the day column is between start day and end day
 			if(((k + 1) >= tasks[i].start_day) && ((k + 1) <= tasks[i].end_day)){
 				strcpy(content, "XXX");
