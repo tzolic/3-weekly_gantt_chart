@@ -185,7 +185,7 @@ void editGantt(struct task tasks[], int nb_tasks){
 	char* buffer;
 	int found_index;
 
-	char* choice = inputHandler("1-Edit the gantt chart\n2-Run a test\n3-Main Menu\nEnter your choice:\n", "Input error! Enter a valid choice (1-3):\n", menuCondition);
+	char* choice = inputHandler("1-Edit the gantt chart\n2-Run a test\n3-Main Menu\nEnter your choice:\n", "Input error!\n1-Edit the gantt chart\n2-Run a test\n3-Main Menu\nEnter your choice:\n", menuCondition);
 
 	//1-edit a task
 	if(strcmp("1", choice) == 0){

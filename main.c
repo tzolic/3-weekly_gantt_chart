@@ -30,7 +30,7 @@ int main(void)
 
 	struct task null_input[10];
 
-	char* choice = inputHandler("1-Use our gantt test example\n2-Create your own gantt from scratch\n3-Exit\nEnter your choice:\n", "Input error! Enter a valid choice (1-3):\n", menuCondition);
+	char* choice = inputHandler("1-Use our gantt test example\n2-Create your own gantt from scratch\n3-Exit\nEnter your choice (1-3):\n", "Input error!\n1-Use our gantt test example\n2-Create your own gantt from scratch\n3-Exit\nEnter your choice (1-3):\n", menuCondition);
 	
 	if(strcmp("1", choice) == 0){
 		drawGantt(example_find_job, 10);
